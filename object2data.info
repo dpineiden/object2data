@@ -2,5 +2,5 @@ name = DB Object to Data X-Y
 description = Este modulo permite pasar los datos recuperados de una consulta a database y entregar un par de arreglos.
 core = 7.x
 package = "Data Convert"
-dependencies[] = jd2date
+dependencies[] = julian_day_to_gregorian
 version = "7.x-1.0"
