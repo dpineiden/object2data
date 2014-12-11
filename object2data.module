@@ -36,4 +36,4 @@ for ($i=0;$i <$cantidad_datos;$i++)
 *for ($i=0;$i <$cantidad_datos;$i++)
 *  {
 *echo "<p>".$fechas2[$i]."-".$data2[$i]."</p>";
-* }
+* }*/
