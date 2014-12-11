@@ -1,3 +1,4 @@
+<?php
 /**
 *Esta funcion permite pasar los datos rescatados de una database - tabla de medidas
 *que contiene año-dia-minuto-segundo-medidaX
