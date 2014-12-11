@@ -1,0 +1,39 @@
+/**
+*Esta funcion permite pasar los datos rescatados de una database - tabla de medidas
+*que contiene año-dia-minuto-segundo-medidaX
+*El dia es dia consecutivo del año, por lo que sa aplica la funcion de conversion jd2gdate
+*Entrega un par de arreglos x-y listos para pasar al sistema de graficos.
+**/
+
+
+
+function object2data($datos_object,$medida_name,$date_format) {
+$cantidad_datos = count($datos_object);
+for ($i=0;$i <$cantidad_datos;$i++)
+  {
+  $time_date=array(
+  'year'=>$datos_object[$i]->año,
+  'day'=>$datos_object[$i]->dia,
+  'hour'=>$datos_object[$i]->hora,
+  'minute'=>$datos_object[$i]->minuto,
+  'seconds'=>0,
+  );
+  $fechas[$i]=jd2gdate($time_date,$date_format.":s");
+ $medida[$i]=$datos_object[$i]->$medida_name;
+  }
+  return array($fechas,$medida);
+}
+
+
+/**
+*$data_example=object2data($record,$date_format);
+*echo "<p>Test función object2data:</p>";
+*$cantidad_datos = count($data_example[0]);
+*echo "<p>$cantidad_datos</p>";
+*$fechas2=array_values($data_example[0]);
+*$data2=array_values($data_example[1]);
+
+*for ($i=0;$i <$cantidad_datos;$i++)
+*  {
+*echo "<p>".$fechas2[$i]."-".$data2[$i]."</p>";
+* }
