@@ -27,13 +27,13 @@ for ($i=0;$i <$cantidad_datos;$i++)
 
 /**
 *$data_example=object2data($record,$date_format);
-*echo "<p>Test función object2data:</p>";
+*echo Test función object2data:";
 *$cantidad_datos = count($data_example[0]);
-*echo "<p>$cantidad_datos</p>";
+*echo $cantidad_datos";
 *$fechas2=array_values($data_example[0]);
 *$data2=array_values($data_example[1]);
 
 *for ($i=0;$i <$cantidad_datos;$i++)
 *  {
-*echo "<p>".$fechas2[$i]."-".$data2[$i]."</p>";
+*echo "".$fechas2[$i]."-".$data2[$i]."";
 * }*/
